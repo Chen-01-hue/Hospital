@@ -7055,3 +7055,37 @@ Caused by: java.net.ConnectException: Connection refused: connect
                 com.chen.yygh.hosp.ServiceHospMain8201 - Started ServiceHospMain8201 in 13.555 seconds (JVM running for 151118.159)
 2023-08-13 12:06:59.629 [restartedMain] INFO 
                 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-08-13 17:32:39.018 [http-nio-8201-exec-3] INFO 
+                o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 17:32:39.031 [http-nio-8201-exec-3] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 17:32:39.167 [http-nio-8201-exec-3] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 135 ms
+2023-08-13 17:32:39.520 [http-nio-8201-exec-3] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-13 17:32:39.729 [http-nio-8201-exec-3] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-13 17:32:44.809 [http-nio-8202-exec-1] INFO 
+                o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-13 17:32:44.818 [http-nio-8202-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-13 17:32:44.866 [http-nio-8202-exec-1] INFO 
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 47 ms
+2023-08-13 17:32:44.916 [http-nio-8201-exec-4] INFO 
+                com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-08-13 17:32:44.921 [http-nio-8201-exec-4] INFO 
+                com.netflix.loadbalancer.BaseLoadBalancer - Client: service-cmn instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-cmn,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2023-08-13 17:32:44.924 [http-nio-8201-exec-4] INFO 
+                c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2023-08-13 17:32:44.925 [http-nio-8201-exec-4] INFO 
+                com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2023-08-13 17:32:44.926 [http-nio-8201-exec-4] INFO 
+                c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-cmn initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-cmn,current list of Servers=[172.31.0.1:8202],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:172.31.0.1:8202;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@64f8e4e0
+2023-08-13 17:32:44.931 [http-nio-8202-exec-1] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-08-13 17:32:44.941 [http-nio-8202-exec-1] INFO 
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-08-13 17:32:45.927 [PollingServerListUpdater-1] INFO 
+                com.netflix.config.ChainedDynamicProperty - Flipping property: service-cmn.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
