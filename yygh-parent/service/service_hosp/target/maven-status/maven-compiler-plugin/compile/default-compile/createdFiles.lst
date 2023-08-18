@@ -1,3 +1,4 @@
+com\chen\yygh\hosp\controller\api\HospApiController.class
 com\chen\yygh\hosp\repository\DepartmentRepository.class
 com\chen\yygh\hosp\service\impl\DepartmentServiceImpl.class
 com\chen\yygh\hosp\config\HospConfig.class

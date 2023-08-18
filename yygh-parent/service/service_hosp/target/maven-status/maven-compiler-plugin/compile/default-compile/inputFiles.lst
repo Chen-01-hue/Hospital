@@ -10,6 +10,7 @@ D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yyg
 D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\service\impl\ScheduleServiceImpl.java
 D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\service\HospitalSetService.java
 D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\mapper\HospitalSetMapper.java
+D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\controller\api\HospApiController.java
 D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\controller\DepartmentController.java
 D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\repository\DepartmentRepository.java
 D:\projects\hospital\yygh-parent\service\service_hosp\src\main\java\com\chen\yygh\hosp\service\impl\HospitalServiceImpl.java

@@ -1,6 +1,8 @@
+/*const axios = require('axios');
+const {MessageBox, Message} = require('element-ui');*/
 import axios from 'axios'
 import { MessageBox, Message } from 'element-ui'
-import cookie from 'js-cookie'
+//import cookie from 'js-cookie'
 // 创建axios实例
 const service = axios.create({
     baseURL: 'http://localhost:8888',

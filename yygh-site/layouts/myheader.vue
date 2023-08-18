@@ -4,7 +4,7 @@
       <!-- logo -->
       <div class="left-wrapper v-link selected">
         <img style="width: 50px" width="50" height="50" src="~assets/images/logo.png">
-        <span class="text">阿昌之尚医通 预约挂号统一平台</span>
+        <span class="text">Chen之尚医通 预约挂号统一平台</span>
       </div>
       <!-- 搜索框 -->
       <div class="search-wrapper">
@@ -12,7 +12,7 @@
           <el-autocomplete
             class="search-input small"
             prefix-icon="el-icon-search"
-            v-model="state"
+            v-model="hosname"
             :fetch-suggestions="querySearchAsync"
             placeholder="点击输入医院名称"
             @select="handleSelect"
@@ -40,7 +40,32 @@
   </div>
 </template>
 <script>
+import hospApi from "~/api/hosp/hospital";
+
 export default {
+  data() {
+    return {
+      hosname: '', //医院名称
+    }
+  },
+  methods:{
+    //在输入框输入值，弹出下拉框，显示相关内容
+    querySearchAsync(queryString, cb) {
+      this.searchObj = []
+      if(queryString == '') return
+      hospApi.getByHosName(queryString).then(response => {
+        for (let i = 0, len = response.data.length; i <len; i++) {
+          response.data[i].value = response.data[i].hosname
+        }
+        cb(response.data)
+      })
+    },
+
+    //在下拉框选择某一个内容，执行下面方法，跳转到详情页面中
+    handleSelect(item) {
+      window.location.href = '/hosp/' + item.hoscode
+    }
+  }
 }
 </script>
 

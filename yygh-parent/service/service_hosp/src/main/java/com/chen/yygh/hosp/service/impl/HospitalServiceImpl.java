@@ -116,7 +116,8 @@ public class HospitalServiceImpl implements HospitalService {
         return null;
     }
 
-    /*//根据医院名称查询
+
+    //根据医院名称查询
     @Override
     public List<Hospital> findByHosname(String hosname) {
         return hospitalRepository.findHospitalByHosnameLike(hosname);
@@ -134,7 +135,7 @@ public class HospitalServiceImpl implements HospitalService {
         //不需要重复返回
         hospital.setBookingRule(null);
         return result;
-    }*/
+    }
 
     //获取查询list集合，遍历进行医院等级封装
     private Hospital setHospitalHosType(Hospital hospital) {

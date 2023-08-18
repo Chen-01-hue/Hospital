@@ -953,3 +953,101 @@ Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立
                 o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
 2023-08-13 12:06:51.865 [restartedMain] WARN 
                 com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-14 09:00:33.809 [lettuce-nioEventLoop-11-2] WARN 
+                io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.65.131:6379]: Reconnection attempt exceeded timeout of 60 SECONDS 
+2023-08-14 09:00:33.873 [HikariPool-1 housekeeper] WARN 
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h16m21s322ms807µs100ns).
+2023-08-14 09:00:38.910 [HikariPool-2 housekeeper] WARN 
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=6h16m21s340ms867µs300ns).
+2023-08-14 09:00:43.879 [lettuce-nioEventLoop-11-3] WARN 
+                io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.65.131:6379]: connection timed out: /192.168.65.131:6379
+2023-08-17 09:43:32.204 [lettuce-nioEventLoop-11-5] WARN 
+                io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.65.131:6379]: Reconnection attempt exceeded timeout of 60 SECONDS 
+2023-08-17 09:43:42.304 [lettuce-nioEventLoop-11-6] WARN 
+                io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.65.131:6379]: connection timed out: /192.168.65.131:6379
+2023-08-17 09:43:56.206 [HikariPool-1 housekeeper] WARN 
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h13m22s94ms902µs300ns).
+2023-08-17 09:43:58.161 [HikariPool-2 housekeeper] WARN 
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3h13m22s94ms349µs900ns).
+2023-08-17 18:02:30.266 [com.alibaba.nacos.naming.beat.sender] WARN 
+                com.alibaba.nacos.client.naming - failed to request http://localhost:8848/nacos/v1/ns/instance/beat?beat=%7B%22cluster%22%3A%22DEFAULT%22%2C%22ip%22%3A%22172.31.0.1%22%2C%22metadata%22%3A%7B%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D%2C%22period%22%3A5000%2C%22port%22%3A8201%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40service-hosp%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&app=unknown&serviceName=DEFAULT_GROUP%40%40service-hosp&encoding=UTF-8&namespaceId=public from 127.0.0.1
+2023-08-17 18:02:30.931 [com.alibaba.nacos.naming.beat.sender] WARN 
+                com.alibaba.nacos.client.naming - failed to request http://localhost:8848/nacos/v1/ns/instance/beat?beat=%7B%22cluster%22%3A%22DEFAULT%22%2C%22ip%22%3A%22172.31.0.1%22%2C%22metadata%22%3A%7B%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D%2C%22period%22%3A5000%2C%22port%22%3A8202%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40service-cmn%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&app=unknown&serviceName=DEFAULT_GROUP%40%40service-cmn&encoding=UTF-8&namespaceId=public from 127.0.0.1
+2023-08-17 18:02:35.030 [SpringContextShutdownHook] WARN 
+                com.alibaba.nacos.client.naming - failed to request http://localhost:8848/nacos/v1/ns/instance?app=unknown&namespaceId=public&port=8201&clusterName=DEFAULT&ip=172.31.0.1&ephemeral=true&serviceName=DEFAULT_GROUP%40%40service-hosp&encoding=UTF-8 from 127.0.0.1
+2023-08-17 18:02:36.881 [com.alibaba.nacos.client.naming.updater] WARN 
+                com.alibaba.nacos.client.naming - failed to request http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=192.168.191.1&serviceName=DEFAULT_GROUP%40%40service-cmn&udpPort=58130&encoding=UTF-8 from 127.0.0.1
+2023-08-17 18:02:38.061 [com.alibaba.nacos.naming.beat.sender] WARN 
+                com.alibaba.nacos.client.naming - failed to request http://localhost:8848/nacos/v1/ns/instance/beat?beat=%7B%22cluster%22%3A%22DEFAULT%22%2C%22ip%22%3A%22172.31.0.1%22%2C%22metadata%22%3A%7B%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D%2C%22period%22%3A5000%2C%22port%22%3A8202%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40service-cmn%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1.0%7D&app=unknown&serviceName=DEFAULT_GROUP%40%40service-cmn&encoding=UTF-8&namespaceId=public from 127.0.0.1
+2023-08-17 18:02:41.079 [SpringContextShutdownHook] WARN 
+                com.alibaba.nacos.client.naming - failed to request http://localhost:8848/nacos/v1/ns/instance?app=unknown&namespaceId=public&port=8202&clusterName=DEFAULT&ip=172.31.0.1&ephemeral=true&serviceName=DEFAULT_GROUP%40%40service-cmn&encoding=UTF-8 from 127.0.0.1
+2023-08-18 11:25:16.709 [restartedMain] WARN 
+                o.s.d.m.c.index.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2023-08-18 11:25:19.012 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 11:25:19.020 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 11:25:22.733 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 11:25:22.739 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 11:25:22.906 [restartedMain] WARN 
+                o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-08-18 11:26:29.810 [restartedMain] WARN 
+                o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hospitalSetController': Unsatisfied dependency expressed through field 'hospitalSetService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.chen.yygh.hosp.service.HospitalSetService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-08-18 11:27:02.452 [restartedMain] WARN 
+                o.s.d.m.c.index.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2023-08-18 11:27:04.446 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 11:27:04.450 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 23:00:15.924 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 23:02:54.768 [restartedMain] WARN 
+                o.s.d.m.c.index.MongoPersistentEntityIndexCreator - Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2023-08-18 23:02:56.917 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2023-08-18 23:02:56.923 [restartedMain] WARN 
+                com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
