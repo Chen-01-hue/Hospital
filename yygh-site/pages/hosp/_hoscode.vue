@@ -102,7 +102,7 @@
 import '~/assets/css/hospital_personal.css'
 import '~/assets/css/hospital.css'
 
-//import cookie from 'js-cookie'
+import cookie from 'js-cookie'
 import hospitalApi from '@/api/hosp/hospital'
 //import userInfoApi from '@/api/userInfo/userInfo'
 
@@ -140,7 +140,7 @@ export default {
       this.activeIndex = index
       document.getElementById(depcode).scrollIntoView();
     },
-    /*schedule(depcode) {
+    schedule(depcode) {
       // 登录判断
       let token = cookie.get('token')
       if (!token) {
@@ -148,7 +148,7 @@ export default {
         return
       }
 
-      //判断用户是否完成认证。认证了才给进行预约挂号
+      /*//判断用户是否完成认证。认证了才给进行预约挂号
       //根据用户表的auth_status判断，我们后端规定了0未认证、1认证中、2认证成功、-1认证失败
       userInfoApi.getUserInfo().then(response => {
         let authStatus = response.data.authStatus
@@ -157,10 +157,10 @@ export default {
           window.location.href = "/user"
           return
         }
-      })
+      })*/
 
       window.location.href = '/hosp/schedule?hoscode=' + this.hoscode + "&depcode=" + depcode
-    }*/
+    }
   }
 }
 </script>

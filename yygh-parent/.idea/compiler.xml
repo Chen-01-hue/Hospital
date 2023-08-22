@@ -10,6 +10,7 @@
         <module name="service_gateway" />
         <module name="common-util" />
         <module name="service_user" />
+        <module name="service_msm" />
         <module name="model" />
         <module name="service_cmn_client" />
         <module name="service-util" />
@@ -34,6 +35,7 @@
       <module name="service_cmn_client" options="-parameters" />
       <module name="service_gateway" options="-parameters" />
       <module name="service_hosp" options="-parameters" />
+      <module name="service_msm" options="-parameters" />
       <module name="service_user" options="-parameters" />
       <module name="untitled" options="-parameters" />
       <module name="yygh-parent" options="" />
