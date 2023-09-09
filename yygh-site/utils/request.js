@@ -11,7 +11,6 @@ const service = axios.create({
 // http request 拦截器
 service.interceptors.request.use(
     config => {
-    // token 先不处理，后续使用时在完善
     //判断cookie是否有token值
     if(cookie.get('token')) {
         //token值放到cookie里面
@@ -27,6 +26,8 @@ service.interceptors.response.use(
     response => {
     	    //状态码是208
         if(response.data.code === 208) {
+          cookie.set('name', '', {domain: 'localhost'})
+          cookie.set('token', '', {domain: 'localhost'})
             //弹出登录输入框
             loginEvent.$emit('loginDialogEvent')
             return

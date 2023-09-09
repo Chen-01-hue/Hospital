@@ -1,0 +1,5 @@
+com\chen\yygh\oss\utils\ConstantPropertiesUtil.class
+com\chen\yygh\oss\controller\FileApiController.class
+com\chen\yygh\oss\ServiceOssApplication.class
+com\chen\yygh\oss\service\FileService.class
+com\chen\yygh\oss\service\impl\FileServiceImpl.class

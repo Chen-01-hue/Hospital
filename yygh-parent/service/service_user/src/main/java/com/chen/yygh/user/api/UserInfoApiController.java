@@ -3,6 +3,7 @@ package com.chen.yygh.user.api;
 
 import com.chen.commonutil.result.Result;
 import com.chen.commonutil.utils.AuthContextHolder;
+import com.chen.model.enums.AuthStatusEnum;
 import com.chen.model.model.user.UserInfo;
 import com.chen.model.vo.user.LoginVo;
 import com.chen.model.vo.user.UserAuthVo;
@@ -27,7 +28,7 @@ public class UserInfoApiController {
         return Result.ok(info);
     }
 
-    /*//用户认证接口
+    //用户认证接口
     @PostMapping("auth/userAuth")
     public Result userAuth(@RequestBody UserAuthVo userAuthVo, HttpServletRequest request) {
         //其实就是往user_info补充添加一些认证数据进去，根据id查出记录会修改记录
@@ -41,6 +42,8 @@ public class UserInfoApiController {
     public Result getUserInfo(HttpServletRequest request) {
         Long userId = AuthContextHolder.getUserId(request);
         UserInfo userInfo = userInfoService.getById(userId);
+        //处理认证状态编码
+        userInfo.getParam().put("authStatusString", AuthStatusEnum.getStatusNameByStatus(userInfo.getAuthStatus()));
         return Result.ok(userInfo);
-    }*/
+    }
 }

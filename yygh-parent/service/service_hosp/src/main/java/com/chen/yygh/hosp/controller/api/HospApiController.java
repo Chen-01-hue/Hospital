@@ -70,7 +70,7 @@ public class HospApiController {
         return Result.ok(map);
     }
 
-    /*@ApiOperation(value = "获取可预约排班数据")
+    @ApiOperation(value = "获取可预约排班数据")
     @GetMapping("auth/getBookingScheduleRule/{page}/{limit}/{hoscode}/{depcode}")
     public Result getBookingSchedule(
             @ApiParam(name = "page", value = "当前页码", required = true)
@@ -118,5 +118,4 @@ public class HospApiController {
             @PathVariable("hoscode") String hoscode) {
         return hospitalSetService.getSignInfoVo(hoscode);
     }
-*/
 }

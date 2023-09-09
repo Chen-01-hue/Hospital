@@ -358,9 +358,9 @@
     border: 1px solid #4990f1
 }
 
-.v-button.white:hover {
+/*.v-button.white:hover {
     background-color: #fff
-}
+}*/
 
 .v-button.disable {
     background-color: #eee;

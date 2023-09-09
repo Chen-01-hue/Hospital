@@ -1,0 +1,3 @@
+com\chen\rabbitutil\constant\MqConst.class
+com\chen\rabbitutil\config\MQConfig.class
+com\chen\rabbitutil\service\RabbitService.class

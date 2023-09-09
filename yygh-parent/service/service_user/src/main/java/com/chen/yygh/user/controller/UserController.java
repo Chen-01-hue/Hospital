@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.chen.commonutil.result.Result;
 import com.chen.model.model.user.UserInfo;
 import com.chen.model.vo.user.UserInfoQueryVo;
-import com.chen.yygh.user.service.UserInfoService;
+import com.chen.yygh.user.service.PatientService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +21,9 @@ import java.util.Map;
 public class UserController {
 
     @Autowired
-    private UserInfoService userInfoService;
+    private com.chen.yygh.user.service.UserInfoService userInfoService;
 
-    /*//用户列表（条件查询带分页）
+    //用户列表（条件查询带分页）
     @GetMapping("{page}/{limit}")
     public Result list(@PathVariable Long page,
                        @PathVariable Long limit,
@@ -53,5 +53,5 @@ public class UserController {
     public Result approval(@PathVariable Long userId,@PathVariable Integer authStatus) {
         userInfoService.approval(userId,authStatus);
         return Result.ok();
-    }*/
+    }
 }

@@ -3,7 +3,7 @@
     <div class="wrapper">
       <!-- logo -->
       <div class="left-wrapper v-link selected">
-        <a href="/" title="首页" target="_blank">
+        <a href="/" title="首页">
           <img style="width: 50px" width="50" height="50" src="~assets/images/logo.png"></a>
         <span class="text">Chen之尚医通 预约挂号统一平台</span>
       </div>
@@ -25,7 +25,8 @@
       <!-- 右侧 -->
       <div class="right-wrapper">
         <span class="v-link clickable">帮助中心</span>
-        <span v-if="name == ''" class="v-link clickable" @click="showLogin()" id="loginDialog">登录/注册</span>
+        <span v-if="name == ''" class="v-link clickable" @click="showLogin()">登录/注册</span>
+        <span class="v-link clickable none" @click="showLogin()" id="loginDialog">登录/注册</span>
         <el-dropdown v-if="name != ''" @command="loginMenu">
 		        <span class="el-dropdown-link" style="font-size: small;font-weight: bolder;">
 		          {{ name }}<i class="el-icon-arrow-down el-icon--right"></i>
@@ -356,6 +357,8 @@ export default {
 
 
 <style scoped>
-
+.none {
+  display: none;
+}
 </style>
 

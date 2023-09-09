@@ -1,12 +1,16 @@
+com\chen\yygh\user\api\PatientApiController.class
 com\chen\yygh\user\controller\UserController.class
 com\chen\yygh\user\ServiceUserApplication.class
 com\chen\yygh\user\utils\ConstantWxPropertiesUtils.class
 com\chen\yygh\user\api\WeixinApiController.class
 com\chen\yygh\user\config\UserConfig.class
 com\chen\yygh\user\api\UserInfoApiController.class
+com\chen\yygh\user\mapper\PatientMapper.class
 com\chen\yygh\user\utils\HttpClientUtils.class
 com\chen\yygh\user\service\UserInfoService.class
 com\chen\yygh\user\mapper\UserInfoMapper.class
 com\chen\yygh\user\utils\HttpClientUtils$1.class
+com\chen\yygh\user\service\PatientService.class
 com\chen\yygh\user\utils\HttpClientUtils$2.class
+com\chen\yygh\user\service\impl\PatientServiceImpl.class
 com\chen\yygh\user\service\impl\UserInfoServiceImpl.class

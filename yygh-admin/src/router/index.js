@@ -119,36 +119,48 @@ export const constantRoutes = [
     ]
   },
   {
-    path: '/example',
+    path: '/user',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    redirect: '/user/userInfo/list',
+    name: 'userInfo',
+    meta: { title: '用户管理', icon: 'table' },
+    alwaysShow: true,
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        path: 'userInfo/list',
+        name: '用户列表',
+        component: () => import('@/views/user/userInfo/list'),
+        meta: { title: '用户列表', icon: 'table' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'userInfo/authList',
+        name: '认证审批列表',
+        component: () => import('@/views/user/userInfo/authList'),
+        meta: { title: '认证审批列表', icon: 'table' }
+      },
+      {
+        path: 'userInfo/show/:id',
+        name: '用户查看',
+        component: () => import('@/views/user/userInfo/show'),
+        meta: { title: '用户查看', noCache: true },
+        hidden: true
       }
     ]
   },
 
   {
-    path: '/form',
+    path: '/sta',
     component: Layout,
+    redirect: '/statistics/order/index',
+    name: 'BaseInfo',
+    meta: { title: '统计管理', icon: 'table' },
+    alwaysShow: true,
     children: [
       {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
+        path: 'order/index',
+        name: '预约统计',
+        component: () => import('@/views/statistics/order/index'),
+        meta: { title: '预约统计', icon: 'form' }
       }
     ]
   },
